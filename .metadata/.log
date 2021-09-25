@@ -237,3 +237,66 @@ java.io.FileNotFoundException: http://download.eclipse.org/usssdk/drops/nightly/
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.getAvailableRepositories(UpdateChecker.java:152)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker.checkForUpdates(UpdateChecker.java:130)
 	at org.eclipse.equinox.internal.p2.updatechecker.UpdateChecker$UpdateCheckThread.run(UpdateChecker.java:78)
+
+!ENTRY org.eclipse.ui 2 2 2021-09-25 22:33:25.568
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY Activator 1 0 2021-09-25 22:33:42.342
+!MESSAGE Has main method computation for project 'ppmtool'
+
+!ENTRY Activator 1 0 2021-09-25 22:33:42.673
+!MESSAGE Has main method computation for project 'ppmtool'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:03.990
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:03.990
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@79c90a[org.springframework.tooling.boot.ls:1.26.0.202106150606(id=559)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:04.053
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY Activator 1 0 2021-09-25 22:34:04.117
+!MESSAGE Has main method computation for project 'ppmtool'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:04.344
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY Activator 1 0 2021-09-25 22:34:04.763
+!MESSAGE Has main method computation for project 'ppmtool'
+
+!ENTRY Activator 1 0 2021-09-25 22:34:05.110
+!MESSAGE Has main method computation for project 'ppmtool'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.262
+!MESSAGE Boot LS startup time from start to initialized: 11194ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.539
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.brKXIlZBisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.554
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.556
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.557
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.557
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.557
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.brKXIlZB => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.569
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.575
+!MESSAGE buffering callback sts4.classpath.brKXIlZB ppmtool false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:15.575
+!MESSAGE executing callback sts4.classpath.brKXIlZB 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-09-25 22:34:16.176
+!MESSAGE executing callback sts4.classpath.brKXIlZB SUCCESS [done]
