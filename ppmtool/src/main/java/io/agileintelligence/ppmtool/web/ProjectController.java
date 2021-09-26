@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -57,5 +58,22 @@ public class ProjectController {
 		projectService.deleteProjectByIdentifier(projectId);
 		
 		return new ResponseEntity<String>("Project with ID: '" + projectId.toUpperCase() + "' was deleted", HttpStatus.OK);
+	}
+	
+	@PutMapping("")
+	public ResponseEntity<?> updateProject(@Valid @RequestBody Project project, BindingResult result) {
+		
+		ResponseEntity<?> errorMap = mapValidationErrorService.MapValidationService(result);
+		
+		if (errorMap != null) return errorMap;
+		
+		Project originalProject = projectService.findProjectByIdentifier(project.getProjectIdentifier());
+		
+		project.setId(originalProject.getId());
+		project.setCreated_At(originalProject.getCreated_At());
+		
+		Project updatedProject = projectService.saveOrUpdateProject(project);
+		
+		return new ResponseEntity<Project>(updatedProject, HttpStatus.OK);
 	}
 }
